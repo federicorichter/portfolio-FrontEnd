@@ -1,0 +1,60 @@
+.upheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tw-logo{
+    height: 100%;
+    width: 100%;
+}
+.tw-conteiner{
+    width: 8%;
+    height: 8%;
+}
+
+.insta-logo{
+    height: 100%;
+    width: 100%;
+}
+
+.insta-conteiner{
+    width: 8%;
+    height: 8%;
+}
+
+.github-logo{
+    height: 100%;
+    width: 100%;
+}
+.github-conteiner{
+    width: 8%;
+    height: 8%;
+}
+
+.li-logo{
+    height: 100%;
+    width: 100%;
+}
+.li-conteiner{
+    width: 8%;
+    height: 8%;
+}
+.social-networks{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 50%;
+
+}
+
+.personal-info{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 50%;
+}
+
+.personal-logo{
+    height: 20%;
+    width: 8%;
+}
