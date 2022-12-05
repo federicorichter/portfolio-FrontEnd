@@ -1,0 +1,88 @@
+.conteiner{
+    padding-top: 5%;
+    background-color: #e5e5f7;
+    /*
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #8805a8, #8805a8 1px, #020266 1px, #020266);
+    */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-display{
+    background-color: rgb(36, 3, 54);
+    justify-self: center;
+    width: 60%;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 18%;
+}
+.project-name{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    padding: 2%;
+    width:60%
+}
+.project{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 2%;
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+.display{
+    height: 120%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.tech{
+    background-color: white;
+    width: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.tech-display{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon{
+    color: white;
+    padding: 10%;
+    cursor: pointer;
+}
+
+.icon-display{
+    display: flex;
+}
+.edit-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 2%;
+    background-color: rgb(36, 3, 54);
+    width: 100%;
+}
+.edit-project-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5%;
+    background-color: rgb(36, 3, 54);
+    color: white;
+    width: 100%;
+    font-size: 1.5em;
+    height: 80%;
+}

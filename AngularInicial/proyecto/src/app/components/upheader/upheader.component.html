@@ -8,5 +8,46 @@
         <a class="github-conteiner" target="_blank" href="https://github.com/federicorichter?tab=repositories"><img class="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
         <a class="li-conteiner" target="_blank" href="https://www.linkedin.com/in/federico-richter-0492731b9/"><img class="li-logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin"></a>
         <a class="tw-conteiner" target="_blank" href="https://twitter.com/richter_federic"><img class="tw-logo" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt="twitter"></a>
-        <button class="login-button">Log in</button>
+        <button *ngIf="showEditLogo==false" class="login-button" (click)="show()">Log in</button>
+        <button *ngIf="showEditLogo==true" class="end-button" (click)="endEdit()">End editing</button>
     </div>
+
+    <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }" />
+                        <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                            <div *ngIf="f['email'].errors['required']">Email is required</div>
+                            <div *ngIf="f['email'].errors['email']">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" />
+                        <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                            <div *ngIf="f['password'].errors['required']">Password is required</div>
+                            <div *ngIf="f['password'].errors['minlength']">Password must be at least 6 characters</div>
+                        </div>
+                      </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary" >Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal" (click) = "hide()">Close</button>
+            
+            </div>
+          </div>
+        </div>
+        </div>

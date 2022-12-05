@@ -1,0 +1,90 @@
+html{
+    font-size: 100%;
+}
+.conteiner{
+    display: flex;
+    height: 150%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #e5e5f7;
+    /*
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #1c0452 25%, transparent 25%), linear-gradient(225deg, #1c0452 25%, transparent 25%), linear-gradient(45deg, #333785 25%, transparent 25%), linear-gradient(315deg, #0b1074 25%, #010113 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    */
+    
+  }
+  .personal-pic-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  .personal-img{
+    width: 60%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 2% ;
+  }
+
+  .personal-info{
+    width:50%;
+    color: aliceblue;
+    padding: 5%;
+  }
+
+  .about-me{
+    padding: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: rgb(36, 35, 35);
+  }
+
+  
+  .edit-icon{
+    cursor: pointer;
+    position: relative;
+    width: 5%;
+    align-items: center;
+    top: 50%;
+    left: 44%;
+    padding-top: 5%;
+
+  }
+
+  .edit-icon1{
+    cursor: pointer;
+    position: relative;
+    width: 5%;
+    align-items: center;
+    top: -1%;
+    left: 90%;
+    padding-top: 5%;
+    color: black;
+
+  }
+  .delete{
+    color: black;
+    cursor: pointer;
+    position: relative;
+    left: 80%;
+  }
+  .edit-text{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: rgb(36, 35, 35);
+    color: #e5e5f7;
+  }

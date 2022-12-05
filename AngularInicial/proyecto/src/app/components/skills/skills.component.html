@@ -1,0 +1,51 @@
+<h3 class="title">Hard and Soft skills</h3>
+<div class="conteiner">
+    <div class="skill-display" *ngFor="let skill of skills">
+        <h3 class="skill-name">{{skill.Name}}</h3>
+        <div *ngIf="skill.quality===1">
+            <div class="red">
+                <ul class="semaforo rojo">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div *ngIf="skill.quality===2">
+            <ul class="semaforo rojo naranja">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div *ngIf="skill.quality===3">
+            <ul class="semaforo rojo naranja amarillo">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div *ngIf="skill.quality===4">
+            <ul class="semaforo rojo naranja amarillo azul">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+    <div *ngIf="skill.quality===5">
+        <ul class="semaforo rojo naranja amarillo azul verde">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+</div>

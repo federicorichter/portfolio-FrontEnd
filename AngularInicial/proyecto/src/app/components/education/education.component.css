@@ -1,0 +1,29 @@
+.seccion{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.conteiner{
+    background-color: #e5e5f7;
+    padding: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title{
+    background-color: #e5e5f7;
+    padding: 5%;
+    padding-top: 10%;
+    text-align: center;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.descripcion{
+    width: 50%;
+    border: solid;
+    padding: 2%;
+}
+.tit{
+    font-size: 150%;
+    margin-top: 2%;
+}

@@ -1,0 +1,19 @@
+<div class="conteiner">
+    <h2 class="title">Proyectos personales</h2>
+    <div class="display">
+        <div class="project-display" *ngFor="let project of projects">
+            <div class="title-display">
+                <h3 *ngIf="editing==false" class="project-name">{{project.Name}}</h3>
+                <textarea contenteditable="true" *ngIf="editing==true" id="text-area-name" class="edit-project-name">{{project.Name}}</textarea>
+                <div *ngIf="edit==true" class="icon-display">
+                    <fa-icon class="icon" [icon]="faEdit" (click)="editChange()" (click)="updateValue(project.id)"></fa-icon>
+                    <fa-icon class="icon" [icon]="faClose" (click)="deleteProject(project.id)"></fa-icon>
+                </div>
+            </div>
+            <p *ngIf="editing==false" class="project">{{project.project}}</p>
+            <textarea contenteditable="true" *ngIf="editing==true" id="text-area-project" class="edit-text">{{project.project}}</textarea>
+            <div  class="tech-display"><p class="tech" *ngFor="let t of project.tech">{{t}}</p></div>
+        </div>
+    </div>    
+</div>
+

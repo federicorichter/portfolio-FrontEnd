@@ -1,0 +1,12 @@
+<div class="conteiner">
+    <div class="personal-pic-conteiner">
+        <fa-icon *ngIf="edit" class="edit-icon" [icon]="faTimes"></fa-icon>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Solid_black.svg/1024px-Solid_black.svg.png" class="personal-img"/>
+    </div>
+    <div class="personal-info">
+        <fa-icon *ngIf="edit" class="edit-icon1" [icon]="faTimes" (click)="editText()" (click)="updateValue()"></fa-icon>
+        <fa-icon *ngIf="edit" class="delete" [icon]="faTime" (click)="deleteText()"></fa-icon>
+        <p *ngIf="editing==false" class="about-me">{{text}}</p>      
+        <textarea contenteditable="true" *ngIf="editing==true" id="text-area" class="edit-text">{{text}}</textarea>
+    </div>
+</div>
